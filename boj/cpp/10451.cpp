@@ -16,6 +16,7 @@ void dfs(int node) {
 	visited[node] = 1;
 
 	for(int i = 0; i < adj[node].size(); i++) {
+		int next = adj[node][i];
 		if(visited[next] == 0) dfs(next);
 	}
 }
